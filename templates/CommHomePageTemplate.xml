@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.9.1905.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-958F46BA08D3417588305721A7416F16">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-958F46BA08D3417588305721A7416F16" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings NoCrawl="false" WelcomePage="SitePages/Home.aspx" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="10" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Security AssociatedOwnerGroup="{sitetitle} Owners" AssociatedMemberGroup="{sitetitle} Members" AssociatedVisitorGroup="{sitetitle} Visitors">
+        <pnp:AdditionalAdministrators>
+          <pnp:User Name="i:0#.f|membership|admin@cfitzsimonds.onmicrosoft.com" />
+        </pnp:AdditionalAdministrators>
+        <pnp:AdditionalOwners>
+          <pnp:User Name="i:0#.f|membership|admin@cfitzsimonds.onmicrosoft.com" />
+        </pnp:AdditionalOwners>
+        <pnp:Permissions />
+      </pnp:Security>
+      <pnp:SiteFields>
+        <Field ID="{170A2CA8-D505-4A8B-8497-B96C39861889}" Name="UserLastDeletionTime" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="UserLastDeletionTime" Group="_Hidden" DisplayName="User Last Deletion Time" ReadOnly="TRUE" ReadOnlyEnforced="TRUE" Type="DateTime" FromBaseType="TRUE" />
+      </pnp:SiteFields>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0E5BF368-4777-4FDE-B278-B6C439776718}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{63F92B86-5607-4806-A2E5-E97DDAE9CB22}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+            </View>
+            <View Name="{6A7CCD08-D6DB-4138-8F68-FE92184A3DE8}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{538A1C06-215B-440A-B839-27F8D4A0E4AB}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Form Templates" Description="This library contains administrator-approved form templates that were activated to this site collection." DocumentTemplate="" TemplateType="101" Url="FormServerTemplates" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/FormServerTemplates/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/FormServerTemplates/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/FormServerTemplates/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010100F8EF98760CBA4A94994F13BA881038FA" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{8560F9DF-3472-4898-8BCB-F74AAB9E928C}" MobileView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/FormServerTemplates/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{9BD4DA4C-D525-4160-BBAB-4E843DC4276F}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Forms" Url="{site}/FormServerTemplates/Forms/All Forms.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="FormCategory" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FormName" />
+                </OrderBy>
+                <Where>
+                  <Neq>
+                    <FieldRef Name="ShowInCatalog" />
+                    <Value Type="Boolean">0</Value>
+                  </Neq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="FormName" />
+                <FieldRef Name="FormDescription" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="66b691cf-07a3-4ca6-ac6d-27fa969c8569" Name="FormName" DisplayName="Form Name" />
+            <pnp:FieldRef ID="65572d4d-445a-43f1-9c77-3358222a2c93" Name="FormCategory" DisplayName="Form Category" />
+            <pnp:FieldRef ID="94ad6f7c-09a1-42ca-974f-d24e080160c2" Name="FormVersion" DisplayName="Form Version" />
+            <pnp:FieldRef ID="1a03fa74-8c63-40cc-bd06-73b580bd8744" Name="FormId" DisplayName="Form ID" />
+            <pnp:FieldRef ID="96c27c9d-33f5-4f8e-893e-684014bc7090" Name="FormLocale" DisplayName="Form Locale" />
+            <pnp:FieldRef ID="1fff255c-6c88-4a76-957b-ae24bf07b78c" Name="FormDescription" DisplayName="Form Description" />
+            <pnp:FieldRef ID="4ef69ca4-4179-4d27-9e6c-f9544d45dfdc" Name="ShowInCatalog" DisplayName="Show in Catalog" />
+            <pnp:FieldRef ID="1a03fa74-8c63-40cc-bd06-73b580bd8743" Name="LinkTemplateName" DisplayName="Form Name" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9CEB0925-C2E3-42EA-8788-EC5BD3A073A3}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Author" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Modified" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{AD943DEF-0FD8-412A-8B0F-0DD46BB93FCD}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{8EB96AF8-108D-4C1E-A472-25F68E8D1AC6}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{BA991EA3-4D6A-44AA-9649-37FD1935BBB2}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Editor" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{070131B8-4822-4EA8-9FC5-83E982E44595}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author" />
+                    <Value Type="Integer">
+                      <UserID />
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
+            <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
+            <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
+            <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
+            <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
+            <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://15-northcentralus1.pushp.svc.ms/notifications?token=w0-a2a424d4-ca98-4cb9-83c5-28ae570da109" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Style Library" Description="Use the style library to store style sheets, such as CSS or XSL files. The style sheets in this gallery can be used by this site or any of its subsites." DocumentTemplate="" TemplateType="101" Url="Style Library" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Style Library/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Style Library/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Style Library/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7D5DAA29-DB6E-4E17-8501-BBE3D2359D9C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Style Library/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;523f72f4-b9f9-4ff9-acd3-720cec7674e6&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content in a visual, tiled layout.&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;e38b7aa6-a9cd-47eb-9ef2-efb5f7084bcf&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;siteId&quot;:&quot;e4901b7f-35d5-444f-a697-453091a4ae3b&quot;,&quot;webId&quot;:&quot;2d4695fc-97f1-4c8a-affc-1eb117ef047d&quot;,&quot;id&quot;:&quot;e6f07493-0021-4cd6-be6f-ad0049c950a3&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:1},&quot;description&quot;:&quot;Make a big impression with this clean, modern, and mobile-friendly site. Use it to communicate information to people inside or outside your team. Share your ideas, results, and more in this visually compelling format.&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:true,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;minCanvasWidth&quot;:32767},&quot;featureText&quot;:&quot;New&quot;,&quot;showFeatureText&quot;:true,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;8adee762-0dc5-48fd-94ef-eb391e8ec58f&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;siteId&quot;:&quot;e4901b7f-35d5-444f-a697-453091a4ae3b&quot;,&quot;webId&quot;:&quot;2d4695fc-97f1-4c8a-affc-1eb117ef047d&quot;,&quot;id&quot;:&quot;8bae98ae-9fcd-4d9b-a8c1-2b9f879d01db&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:32767},&quot;description&quot;:&quot;Strategy is key to your business. Solutions make your business run. Communication brings it all together. Whether it's your innovative product line, your amazing customer service, or your obsessive attention to detail, communicate your strategy and solutions through compelling images and descriptions. &quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:true,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;minCanvasWidth&quot;:32767},&quot;featureText&quot;:&quot;Connect&quot;,&quot;showFeatureText&quot;:true,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;cc618d86-dc33-4742-9df0-e2f714df1f78&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;siteId&quot;:&quot;e4901b7f-35d5-444f-a697-453091a4ae3b&quot;,&quot;webId&quot;:&quot;2d4695fc-97f1-4c8a-affc-1eb117ef047d&quot;,&quot;id&quot;:&quot;96a4cbdb-43e3-4458-855e-37464b9dddc1&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:32767},&quot;description&quot;:&quot;Report on project results. Show off the accomplishments of your team. And know that whether it's a laptop, desktop, tablet or phone, your results will look fantastic with this highly responsive design.&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:true,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;minCanvasWidth&quot;:32767},&quot;featureText&quot;:&quot;Report&quot;,&quot;showFeatureText&quot;:true,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;a1098566-46ce-45a3-ad6f-e2c350cd2ddc&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;9d2f7147-4b93-478a-8e2a-c1d7d20356b2&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;upperCaseCallToAction&quot;:true}],&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:2,&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;useLegacyFourTileStyle&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Make an impression&quot;,&quot;content[1].title&quot;:&quot;Share your strategy&quot;,&quot;content[2].title&quot;:&quot;Bring your results to light&quot;,&quot;content[0].callToActionText&quot;:&quot;Learn about Communication Sites&quot;,&quot;content[1].callToActionText&quot;:&quot;Learn how to customize this site&quot;,&quot;content[2].callToActionText&quot;:&quot;Learn about webparts&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOSITEDEFAULTIMAGE1.PNG&quot;,&quot;content[1].image.url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOSITEDEFAULTIMAGE2.PNG&quot;,&quot;content[2].image.url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOSITEDEFAULTIMAGE3.PNG&quot;,&quot;content[0].previewImage.url&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=841917&quot;,&quot;content[1].previewImage.url&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=841918&quot;,&quot;content[2].previewImage.url&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=851160&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=841917&quot;,&quot;content[1].link&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=841918&quot;,&quot;content[2].link&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=851160&quot;,&quot;content[0].callToActionLink&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=841917&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;e4901b7f-35d5-444f-a697-453091a4ae3b&quot;,&quot;webId&quot;:&quot;2d4695fc-97f1-4c8a-affc-1eb117ef047d&quot;,&quot;uniqueId&quot;:&quot;e6f07493-0021-4cd6-be6f-ad0049c950a3&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[1].image.url&quot;:{&quot;siteId&quot;:&quot;e4901b7f-35d5-444f-a697-453091a4ae3b&quot;,&quot;webId&quot;:&quot;2d4695fc-97f1-4c8a-affc-1eb117ef047d&quot;,&quot;uniqueId&quot;:&quot;8bae98ae-9fcd-4d9b-a8c1-2b9f879d01db&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[2].image.url&quot;:{&quot;siteId&quot;:&quot;e4901b7f-35d5-444f-a697-453091a4ae3b&quot;,&quot;webId&quot;:&quot;2d4695fc-97f1-4c8a-affc-1eb117ef047d&quot;,&quot;uniqueId&quot;:&quot;96a4cbdb-43e3-4458-855e-37464b9dddc1&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[1].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[2].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="ImageGallery" JsonControlData="{&quot;id&quot;: &quot;af8be689-990e-492a-81f7-ba3e4cd3ed9c&quot;, &quot;instanceId&quot;: &quot;c7b0bb8f-26e4-49bd-9894-06487c36f528&quot;, &quot;title&quot;: &quot;Image gallery&quot;, &quot;description&quot;: &quot;Spotlight your favorite images in a gallery.&quot;, &quot;dataVersion&quot;: &quot;1.7&quot;, &quot;properties&quot;: {&quot;layout&quot;:2,&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;dots&quot;:false,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;autoplaySpeed&quot;:5,&quot;lazyLoad&quot;:true},&quot;gridSettings&quot;:{&quot;imageSize&quot;:3,&quot;imageCropping&quot;:1,&quot;lightbox&quot;:false,&quot;imageAspectRatio&quot;:2},&quot;images&quot;:[{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;fa1fd097-bc2f-4d7d-9d85-6a2fae1dc6b6&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;6babe565-6a65-4b85-a735-42b2a8ce91a3&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;1099463f-c4ac-4b82-a422-95fb8d57d375&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;399542ec-8692-4422-ad2d-715cf3ab1f20&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;b3c5faf5-1403-452c-8ca3-6bbed6398909&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;ae9be572-23e7-4bd0-bef0-d130cd5636b5&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;36e15717-849e-4df9-b2be-ec1751fd87f5&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;id&quot;:&quot;7b0aa2db-5647-48cf-bf1b-3cd1e2fa80c3&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300}],&quot;imageSourceType&quot;:1,&quot;isRecursive&quot;:false,&quot;maxImagesCount&quot;:10}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Image gallery&quot;,&quot;images[0].title&quot;:&quot;&quot;,&quot;images[1].title&quot;:&quot;&quot;,&quot;images[2].title&quot;:&quot;&quot;,&quot;images[3].title&quot;:&quot;&quot;,&quot;images[4].title&quot;:&quot;&quot;,&quot;images[5].title&quot;:&quot;&quot;,&quot;images[6].title&quot;:&quot;&quot;,&quot;images[7].title&quot;:&quot;&quot;,&quot;images[0].description&quot;:&quot;&quot;,&quot;images[0].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;images[0].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYCHAIRS.PNG&quot;,&quot;images[1].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYCUSHIONS.PNG&quot;,&quot;images[2].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYHANDRAIL.PNG&quot;,&quot;images[3].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYLAMPS.PNG&quot;,&quot;images[4].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYLOUNGE.PNG&quot;,&quot;images[5].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYPENDANT.PNG&quot;,&quot;images[6].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYWALL.PNG&quot;,&quot;images[7].url&quot;:&quot;/_LAYOUTS/IMAGES/PORTFOLIOIMAGEGALLERYWOOD.PNG&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;images[0].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;fa1fd097-bc2f-4d7d-9d85-6a2fae1dc6b6&quot;,&quot;fixedWidth&quot;:300},&quot;images[1].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;6babe565-6a65-4b85-a735-42b2a8ce91a3&quot;,&quot;fixedWidth&quot;:300},&quot;images[2].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;1099463f-c4ac-4b82-a422-95fb8d57d375&quot;,&quot;fixedWidth&quot;:300},&quot;images[3].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;399542ec-8692-4422-ad2d-715cf3ab1f20&quot;,&quot;fixedWidth&quot;:300},&quot;images[4].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;b3c5faf5-1403-452c-8ca3-6bbed6398909&quot;,&quot;fixedWidth&quot;:300},&quot;images[5].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;ae9be572-23e7-4bd0-bef0-d130cd5636b5&quot;,&quot;fixedWidth&quot;:300},&quot;images[6].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;36e15717-849e-4df9-b2be-ec1751fd87f5&quot;,&quot;fixedWidth&quot;:300},&quot;images[7].url&quot;:{&quot;siteId&quot;:&quot;01e3e956-7159-4f30-811d-2dd4c4d0182b&quot;,&quot;webId&quot;:&quot;498430a8-dd6c-4934-8fc2-d5688787023b&quot;,&quot;listId&quot;:&quot;a22f4a1f-b4be-426e-b9ca-fc4ce4ab85ad&quot;,&quot;uniqueId&quot;:&quot;7b0aa2db-5647-48cf-bf1b-3cd1e2fa80c3&quot;,&quot;fixedWidth&quot;:300}},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;44777806-007b-4c18-9263-f1e16a726911&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="af8be689-990e-492a-81f7-ba3e4cd3ed9c" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" MenuStyle="MegaMenu" />
+      <pnp:Footer Enabled="true" RemoveExistingNodes="false" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
