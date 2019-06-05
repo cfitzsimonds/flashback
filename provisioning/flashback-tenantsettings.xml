@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema" Author="SharePoint PnP" Generator="SharePoint PnP" Version="1.0" Description="SharePoint Starter Kit" DisplayName="SharePoint Starter Kit" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/SP-Starter-Kit/sp-starter-kit-front-page-16x9.png">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.1.1809.0, Culture=neutral, PublicKeyToken=null">
+    <pnp:Parameters>
+      <pnp:Parameter Key="Company">Flashback</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrlPrefix">flashback</pnp:Parameter>
+      <pnp:Parameter Key="WeatherCity">Clarkston</pnp:Parameter>
+      <pnp:Parameter Key="StockSymbol">MSFT</pnp:Parameter>
+      <pnp:Parameter Key="lcid">1033</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Tenant>
+    <pnp:WebApiPermissions>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="Sites.Read.All"/>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="Contacts.Read"/>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="User.Read.All"/>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="Mail.Read"/>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="Calendars.ReadWrite"/>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="Group.ReadWrite.All"/>
+      <pnp:WebApiPermission Resource="Microsoft Graph" Scope="MailboxSettings.Read"/>      
+    </pnp:WebApiPermissions>
+  </pnp:Tenant>
+  <pnp:Sequence ID="sp-flashback-sequence">
+    <pnp:TermStore>
+        <pnp:TermGroup Name="Flashback" ID="7fcd9a04-681f-44b8-8550-7a948614b41d" Description="" UpdateBehavior="Overwrite">
+        <pnp:TermSets>
+            <pnp:TermSet Name="Brand" ID="c13357a5-0dd3-4624-9d5f-0fa13d7ddb66" Description="">
+            <pnp:Terms>
+                <pnp:Term Name="GI Joe" ID="d954ffeb-f787-4df2-96e5-ee61b9f1b8e2" Description="" SourceTermId="d954ffeb-f787-4df2-96e5-ee61b9f1b8e2">
+                </pnp:Term>
+                <pnp:Term Name="Nintendo" ID="e2251e12-0601-4224-8ae4-2ef073bd3a5a" Description="" SourceTermId="e2251e12-0601-4224-8ae4-2ef073bd3a5a">
+                </pnp:Term>
+                <pnp:Term Name="Star Wars" ID="5c03ef3a-e199-4cfd-906e-1b20469fcc3c" Description="" SourceTermId="5c03ef3a-e199-4cfd-906e-1b20469fcc3c">
+                </pnp:Term>
+                <pnp:Term Name="Transformers" ID="7598ec97-2821-4cec-8edf-69e9d2420f59" Description="" SourceTermId="7598ec97-2821-4cec-8edf-69e9d2420f59">
+                </pnp:Term>
+            </pnp:Terms>
+            </pnp:TermSet>
+        </pnp:TermSets>
+        </pnp:TermGroup>
+    </pnp:TermStore>
+  </pnp:Sequence>
+</pnp:Provisioning>
