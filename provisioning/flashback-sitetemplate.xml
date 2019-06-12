@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.20.1711.0, Culture=neutral, PublicKeyToken=3751622786b357c2" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-00053BC750ED47BE9FF32C706E9F4383">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-00053BC750ED47BE9FF32C706E9F4383" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flashback-sitecolumns.xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flashback-contenttypes.xml"/>
+      <pnp:Lists>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flashback-sitepages.xml"/>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

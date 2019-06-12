@@ -23,20 +23,42 @@
   <pnp:Sequence ID="sp-flashback-sequence">
     <pnp:TermStore>
         <pnp:TermGroup Name="Flashback" ID="7fcd9a04-681f-44b8-8550-7a948614b41d" Description="" UpdateBehavior="Overwrite">
-        <pnp:TermSets>
-            <pnp:TermSet Name="Brand" ID="c13357a5-0dd3-4624-9d5f-0fa13d7ddb66" Description="">
-            <pnp:Terms>
-                <pnp:Term Name="GI Joe" ID="d954ffeb-f787-4df2-96e5-ee61b9f1b8e2" Description="" SourceTermId="d954ffeb-f787-4df2-96e5-ee61b9f1b8e2">
-                </pnp:Term>
-                <pnp:Term Name="Nintendo" ID="e2251e12-0601-4224-8ae4-2ef073bd3a5a" Description="" SourceTermId="e2251e12-0601-4224-8ae4-2ef073bd3a5a">
-                </pnp:Term>
-                <pnp:Term Name="Star Wars" ID="5c03ef3a-e199-4cfd-906e-1b20469fcc3c" Description="" SourceTermId="5c03ef3a-e199-4cfd-906e-1b20469fcc3c">
-                </pnp:Term>
-                <pnp:Term Name="Transformers" ID="7598ec97-2821-4cec-8edf-69e9d2420f59" Description="" SourceTermId="7598ec97-2821-4cec-8edf-69e9d2420f59">
-                </pnp:Term>
-            </pnp:Terms>
-            </pnp:TermSet>
-        </pnp:TermSets>
+          <pnp:TermSets>
+              <pnp:TermSet Name="Brand" ID="c13357a5-0dd3-4624-9d5f-0fa13d7ddb66" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="GI Joe" ID="d954ffeb-f787-4df2-96e5-ee61b9f1b8e2" Description="" SourceTermId="d954ffeb-f787-4df2-96e5-ee61b9f1b8e2">
+                  </pnp:Term>
+                  <pnp:Term Name="Nintendo" ID="e2251e12-0601-4224-8ae4-2ef073bd3a5a" Description="" SourceTermId="e2251e12-0601-4224-8ae4-2ef073bd3a5a">
+                  </pnp:Term>
+                  <pnp:Term Name="Star Wars" ID="5c03ef3a-e199-4cfd-906e-1b20469fcc3c" Description="" SourceTermId="5c03ef3a-e199-4cfd-906e-1b20469fcc3c">
+                  </pnp:Term>
+                  <pnp:Term Name="Transformers" ID="7598ec97-2821-4cec-8edf-69e9d2420f59" Description="" SourceTermId="7598ec97-2821-4cec-8edf-69e9d2420f59">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+              <pnp:TermSet Name="Company" ID="6f28b1fa-ce47-4454-bb18-da72d0c89232" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="Hasbro" ID="9c286014-bfa8-415a-825c-35a68d290318" Description="" SourceTermId="9c286014-bfa8-415a-825c-35a68d290318">
+                  </pnp:Term>
+                  <pnp:Term Name="Kenner" ID="e7ba8a72-0dfb-4ed5-afbd-71e79fdf56a3" Description="" SourceTermId="e7ba8a72-0dfb-4ed5-afbd-71e79fdf56a3">
+                  </pnp:Term>
+                  <pnp:Term Name="Nintendo" ID="e9db04d8-226d-4ce4-8ab9-bb189ae2bb1d" Description="" SourceTermId="e9db04d8-226d-4ce4-8ab9-bb189ae2bb1d">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+              <pnp:TermSet Name="Product" ID="836c643c-37b5-4eed-bec1-6c2fbb17343b" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="Darth Vader" ID="b000a1d0-ea5d-4245-abea-cfc056766a77" Description="" SourceTermId="b000a1d0-ea5d-4245-abea-cfc056766a77">
+                  </pnp:Term>
+                  <pnp:Term Name="Legend of Zelda" ID="123c95a9-ccc9-4cef-abdd-0d4a1fce3d42" Description="" SourceTermId="123c95a9-ccc9-4cef-abdd-0d4a1fce3d42">
+                  </pnp:Term>
+                  <pnp:Term Name="Optimus Prime" ID="9b6f7a28-adca-445f-ac1d-b4b370daaba9" Description="" SourceTermId="9b6f7a28-adca-445f-ac1d-b4b370daaba9">
+                  </pnp:Term>
+                  <pnp:Term Name="Snake Eyes" ID="de3936c0-8ae4-4167-b9d9-af2acb22f4b8" Description="" SourceTermId="de3936c0-8ae4-4167-b9d9-af2acb22f4b8">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+          </pnp:TermSets>
         </pnp:TermGroup>
     </pnp:TermStore>
   </pnp:Sequence>
