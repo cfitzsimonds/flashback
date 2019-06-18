@@ -1,4 +1,5 @@
 <pnp:ContentTypes xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
   <!-- FLASHBACK CONTENT TYPES -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flashback-brandpage.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flashback-productpage.xml"/>
 </pnp:ContentTypes>

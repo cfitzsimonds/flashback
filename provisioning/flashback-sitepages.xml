@@ -2,6 +2,7 @@
     xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
     <pnp:ContentTypeBindings>
         <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002703E31E1ED074438E750D95C80DB3A4" Default="true" />
+        <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002703E31E1ED074438E750D95C80DB3A5" />
         <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
         <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" />
         <pnp:ContentTypeBinding ContentTypeID="0x0120" />
