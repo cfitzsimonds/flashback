@@ -1,7 +1,7 @@
 <pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
     <Field Type="Note" DisplayName="Brand_0" StaticName="hd313e3cdfe647b3a6b09e2e2bc5fac2" Name="hd313e3cdfe647b3a6b09e2e2bc5fac2" ID="{4569116d-b9a6-4c4a-b127-1161e4b653cb}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{13102e63-8df2-463d-b456-b153fd94878f}" AllowDeletion="TRUE" Hidden="TRUE" />
     <Field Type="Note" DisplayName="Product_0" StaticName="b9662b2311d945d49b991fa1c72bbc82" Name="b9662b2311d945d49b991fa1c72bbc82" ID="{fe5371da-5bbe-4c24-9d87-bb59ae5f6142}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{13102e63-8df2-463d-b456-b153fd94878f}" AllowDeletion="TRUE" Hidden="TRUE" />
-    <Field Name="Brand" DisplayName="Brand" Type="TaxonomyFieldType" ID="{f210a234-1b96-4d59-b954-25d516edc920}" Description="" Group="Flashback" SourceID="{6e546221-c1af-49f2-a69e-7511350a65c4}" StaticName="Brand" WebId="6e546221-c1af-49f2-a69e-7511350a65c4" ShowField="Term1033" AllowDeletion="TRUE" List="{{listid:TaxonomyHiddenList}}" Required="FALSE" EnforceUniqueValues="FALSE">
+    <Field Name="Brand" DisplayName="Brand" Type="TaxonomyFieldType" ID="{f210a234-1b96-4d59-b954-25d516edc920}" Description="" Group="_Flashback" SourceID="{6e546221-c1af-49f2-a69e-7511350a65c4}" StaticName="Brand" WebId="6e546221-c1af-49f2-a69e-7511350a65c4" ShowField="Term1033" AllowDeletion="TRUE" List="{{listid:TaxonomyHiddenList}}" Required="FALSE" EnforceUniqueValues="FALSE">
         <Customization>
         <ArrayOfProperty>
             <Property>
@@ -67,7 +67,7 @@
         </ArrayOfProperty>
         </Customization>
     </Field>
-    <Field Name="Product" DisplayName="Product" Type="TaxonomyFieldType" ID="{25e0c72e-41cf-4ecd-a693-e919ce49c75f}" Description="" Group="Flashback" SourceID="{6e546221-c1af-49f2-a69e-7511350a65c4}" StaticName="Product" WebId="6e546221-c1af-49f2-a69e-7511350a65c4" ShowField="Term1033" AllowDeletion="TRUE" List="{{listid:TaxonomyHiddenList}}" Required="FALSE" EnforceUniqueValues="FALSE">
+    <Field Name="Product" DisplayName="Product" Type="TaxonomyFieldType" ID="{25e0c72e-41cf-4ecd-a693-e919ce49c75f}" Description="" Group="_Flashback" SourceID="{6e546221-c1af-49f2-a69e-7511350a65c4}" StaticName="Product" WebId="6e546221-c1af-49f2-a69e-7511350a65c4" ShowField="Term1033" AllowDeletion="TRUE" List="{{listid:TaxonomyHiddenList}}" Required="FALSE" EnforceUniqueValues="FALSE">
         <Customization>
         <ArrayOfProperty>
             <Property>

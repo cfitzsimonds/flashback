@@ -1,4 +1,4 @@
-<pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C4118002703E31E1ED074438E750D95C80DB3A5" Name="Product Page" Description="Create a new site page." Group="Flashback" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+<pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C4118002703E31E1ED074438E750D95C80DB3A5" Name="Product Page" Description="Create a new site page." Group="_Flashback" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
     <pnp:FieldRefs>
     <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
     <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" />
@@ -18,12 +18,8 @@
     <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" />
     <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" />
     <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" />
-    <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" />
-    <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" />
     <pnp:FieldRef ID="f210a234-1b96-4d59-b954-25d516edc920" Name="Brand" />
     <pnp:FieldRef ID="25e0c72e-41cf-4ecd-a693-e919ce49c75f" Name="Product" />
-    <pnp:FieldRef ID="1390a86a-23da-45f0-8efe-ef36edadfb39" Name="TaxKeywordTaxHTField" Hidden="true" />
-    <pnp:FieldRef ID="23f27201-bee3-471e-b2e7-b64fd8b7ca38" Name="TaxKeyword" />
     </pnp:FieldRefs>
     <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
 </pnp:ContentType>

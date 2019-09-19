@@ -1,0 +1,274 @@
+<pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+    <Field Type="Note" DisplayName="ResourceType_0" StaticName="f653edeef3314f9e876bd0af95a519e0" Name="f653edeef3314f9e876bd0af95a519e0" ID="{441efb2b-c7bc-4589-a43d-994c37d9be7a}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{fec55ea7-a0d3-47a9-b0d1-4ff7d0142be9}" />
+    <Field Type="Note" DisplayName="Team_0" StaticName="h01462c0a5034d0ab34c0808dce30089" Name="h01462c0a5034d0ab34c0808dce30089" ID="{0d20d16e-952d-4f2b-b95c-fb9a22ef8b90}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{fec55ea7-a0d3-47a9-b0d1-4ff7d0142be9}" />
+    <Field Type="Note" DisplayName="TeamType_0" StaticName="b467c871072e45098e82597571ebc54f" Name="b467c871072e45098e82597571ebc54f" ID="{a70f0abb-7810-4030-a93a-eee0cc30566e}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{fec55ea7-a0d3-47a9-b0d1-4ff7d0142be9}" />
+    <Field Type="Note" DisplayName="Topic_0" StaticName="l2be424908524be0896ae5a2fafbadd5" Name="l2be424908524be0896ae5a2fafbadd5" ID="{40f6f8f9-7ed1-47b3-b8ab-892463c558c0}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{fec55ea7-a0d3-47a9-b0d1-4ff7d0142be9}" />
+    
+    <Field Type="TaxonomyFieldTypeMulti" Mult="TRUE" DisplayName="Topic" WebId="b06c92df-54a2-49fa-b109-1ff99948ca15" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_Flashback" ID="{52be4249-0852-4be0-896a-e5a2fafbadd5}" SourceID="{b06c92df-54a2-49fa-b109-1ff99948ca15}" StaticName="Topic" Name="Topic" List="{{listid:TaxonomyHiddenList}}" AllowDeletion="TRUE">
+        <Default>
+        </Default>
+        <Customization>
+        <ArrayOfProperty>
+            <Property>
+            <Name>SspId</Name>
+            <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+            </Property>
+            <Property>
+            <Name>GroupId</Name>
+            </Property>
+            <Property>
+            <Name>TermSetId</Name>
+            <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:SPARK:Topic}</Value>
+            </Property>
+            <Property>
+            <Name>AnchorId</Name>
+            <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+            </Property>
+            <Property>
+            <Name>UserCreated</Name>
+            <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>Open</Name>
+            <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TextField</Name>
+            <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{40f6f8f9-7ed1-47b3-b8ab-892463c558c0}</Value>
+            </Property>
+            <Property>
+            <Name>IsPathRendered</Name>
+            <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>IsKeyword</Name>
+            <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TargetTemplate</Name>
+            </Property>
+            <Property>
+            <Name>CreateValuesInEditForm</Name>
+            <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>FilterAssemblyStrongName</Name>
+            <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+            </Property>
+            <Property>
+            <Name>FilterClassName</Name>
+            <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+            </Property>
+            <Property>
+            <Name>FilterMethodName</Name>
+            <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+            </Property>
+            <Property>
+            <Name>FilterJavascriptProperty</Name>
+            <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+            </Property>
+        </ArrayOfProperty>
+        </Customization>
+    </Field>
+
+    <Field Type="TaxonomyFieldTypeMulti" Mult="TRUE" DisplayName="Team Type" WebId="b06c92df-54a2-49fa-b109-1ff99948ca15" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_Flashback" ID="{b467c871-072e-4509-8e82-597571ebc54f}" SourceID="{b06c92df-54a2-49fa-b109-1ff99948ca15}" StaticName="TeamType2" Name="TeamType2" List="{{listid:TaxonomyHiddenList}}" AllowDeletion="TRUE">
+        <Default>
+        </Default>
+        <Customization>
+        <ArrayOfProperty>
+            <Property>
+            <Name>SspId</Name>
+            <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+            </Property>
+            <Property>
+            <Name>GroupId</Name>
+            </Property>
+            <Property>
+            <Name>TermSetId</Name>
+            <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:SPARK:Team Type}</Value>
+            </Property>
+            <Property>
+            <Name>AnchorId</Name>
+            <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+            </Property>
+            <Property>
+            <Name>UserCreated</Name>
+            <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>Open</Name>
+            <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TextField</Name>
+            <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{a70f0abb-7810-4030-a93a-eee0cc30566e}</Value>
+            </Property>
+            <Property>
+            <Name>IsPathRendered</Name>
+            <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>IsKeyword</Name>
+            <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TargetTemplate</Name>
+            </Property>
+            <Property>
+            <Name>CreateValuesInEditForm</Name>
+            <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>FilterAssemblyStrongName</Name>
+            <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+            </Property>
+            <Property>
+            <Name>FilterClassName</Name>
+            <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+            </Property>
+            <Property>
+            <Name>FilterMethodName</Name>
+            <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+            </Property>
+            <Property>
+            <Name>FilterJavascriptProperty</Name>
+            <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+            </Property>
+        </ArrayOfProperty>
+        </Customization>
+    </Field>
+
+    <Field Type="TaxonomyFieldTypeMulti" Mult="TRUE" DisplayName="Team" WebId="b06c92df-54a2-49fa-b109-1ff99948ca15" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_Flashback" ID="{101462c0-a503-4d0a-b34c-0808dce30089}" SourceID="{b06c92df-54a2-49fa-b109-1ff99948ca15}" StaticName="Team" Name="Team" List="{{listid:TaxonomyHiddenList}}" AllowDeletion="TRUE">
+        <Default>
+        </Default>
+        <Customization>
+        <ArrayOfProperty>
+            <Property>
+            <Name>SspId</Name>
+            <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+            </Property>
+            <Property>
+            <Name>GroupId</Name>
+            </Property>
+            <Property>
+            <Name>TermSetId</Name>
+            <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:SPARK:Team}</Value>
+            </Property>
+            <Property>
+            <Name>AnchorId</Name>
+            <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+            </Property>
+            <Property>
+            <Name>UserCreated</Name>
+            <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>Open</Name>
+            <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TextField</Name>
+            <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{0d20d16e-952d-4f2b-b95c-fb9a22ef8b90}</Value>
+            </Property>
+            <Property>
+            <Name>IsPathRendered</Name>
+            <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>IsKeyword</Name>
+            <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TargetTemplate</Name>
+            </Property>
+            <Property>
+            <Name>CreateValuesInEditForm</Name>
+            <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>FilterAssemblyStrongName</Name>
+            <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+            </Property>
+            <Property>
+            <Name>FilterClassName</Name>
+            <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+            </Property>
+            <Property>
+            <Name>FilterMethodName</Name>
+            <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+            </Property>
+            <Property>
+            <Name>FilterJavascriptProperty</Name>
+            <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+            </Property>
+        </ArrayOfProperty>
+        </Customization>
+    </Field>
+
+    <Field Type="TaxonomyFieldTypeMulti" Mult="TRUE" DisplayName="Resource Type" WebId="b06c92df-54a2-49fa-b109-1ff99948ca15" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_Flashback" ID="{f653edee-f331-4f9e-876b-d0af95a519e0}" SourceID="{b06c92df-54a2-49fa-b109-1ff99948ca15}" StaticName="ResourceType2" Name="ResourceType2" List="{{listid:TaxonomyHiddenList}}" AllowDeletion="TRUE">
+        <Default>
+        </Default>
+        <Customization>
+        <ArrayOfProperty>
+            <Property>
+            <Name>SspId</Name>
+            <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+            </Property>
+            <Property>
+            <Name>GroupId</Name>
+            </Property>
+            <Property>
+            <Name>TermSetId</Name>
+            <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:SPARK:Resource Type}</Value>
+            </Property>
+            <Property>
+            <Name>AnchorId</Name>
+            <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+            </Property>
+            <Property>
+            <Name>UserCreated</Name>
+            <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>Open</Name>
+            <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TextField</Name>
+            <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{441efb2b-c7bc-4589-a43d-994c37d9be7a}</Value>
+            </Property>
+            <Property>
+            <Name>IsPathRendered</Name>
+            <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>IsKeyword</Name>
+            <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>TargetTemplate</Name>
+            </Property>
+            <Property>
+            <Name>CreateValuesInEditForm</Name>
+            <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+            </Property>
+            <Property>
+            <Name>FilterAssemblyStrongName</Name>
+            <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+            </Property>
+            <Property>
+            <Name>FilterClassName</Name>
+            <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+            </Property>
+            <Property>
+            <Name>FilterMethodName</Name>
+            <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+            </Property>
+            <Property>
+            <Name>FilterJavascriptProperty</Name>
+            <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+            </Property>
+        </ArrayOfProperty>
+        </Customization>
+    </Field>  
+</pnp:SiteFields>
