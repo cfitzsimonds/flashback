@@ -1,4 +1,4 @@
-<pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C411800E1D5AF48C8002041896B5329B40D5F9E" Name="SPARK Page" Description="" Group="_SPARK" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+<pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C411800E1D5AF48C8002041896B5329B40D5F9E01" Name="Training Page" Description="" Group="_SPARK" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
     <pnp:FieldRefs>
         <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
         <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="false" />
@@ -27,6 +27,12 @@
         <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" UpdateChildren="false" />
         <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" UpdateChildren="false" />
         <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" UpdateChildren="false" />
+        <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="kd40ce08047d490d9f16caee96f57425" Hidden="true" UpdateChildren="false" />
+        <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="How_x0020_To" UpdateChildren="false" />
+        <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="o62a1dc32ee84ea78ed57a880ee91558" Hidden="true" UpdateChildren="false" />
+        <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="Training_x0020_Format" UpdateChildren="false" />
+        <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="g43bcbe615f545f1bca66c154e3067e2" Hidden="true" UpdateChildren="false" />
+        <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="Training_x0020_Platform" UpdateChildren="false" />
     </pnp:FieldRefs>
     <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
 </pnp:ContentType>

@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
-  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.20.1711.0, Culture=neutral, PublicKeyToken=3751622786b357c2" />
-  <pnp:Templates ID="CONTAINER-TEMPLATE-00053BC750ED47BE9FF32C706E9F4383">
-    <pnp:ProvisioningTemplate ID="TEMPLATE-00053BC750ED47BE9FF32C706E9F4383" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.11.1907.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-6A0EEFC2B1FF4FC8B28B571C13198394">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-6A0EEFC2B1FF4FC8B28B571C13198394" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
       <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Sections/Base/Base-Fields.xml"/>
       <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Sections/Base/Base-ContentTypes.xml"/>
       <pnp:Lists>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Lists/Documents.xml"/>
         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Lists/Site Pages.xml"/>
       </pnp:Lists>
     </pnp:ProvisioningTemplate>

@@ -1,2 +1,2 @@
-﻿$termStore = Read-PnPTenantTemplate -Path "C:\Code\Projects\flashback\provisioning\flashback-tenantsettings.xml"
-Save-PnPTenantTemplate -Hierarchy $termStore -Out "C:\Code\Projects\flashback\provisioning\flashback-tenantsettings.pnp"
+﻿$termStore = Read-PnPTenantTemplate -Path "D:\repos\flashback\provisioning\flashback-tenantsettings.xml"
+Save-PnPTenantTemplate -Hierarchy $termStore -Out "D:\repos\flashback\provisioning\flashback-tenantsettings.pnp"

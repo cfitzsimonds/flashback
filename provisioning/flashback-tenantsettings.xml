@@ -60,6 +60,72 @@
               </pnp:TermSet>
           </pnp:TermSets>
         </pnp:TermGroup>
+        <pnp:TermGroup Name="SPARK" ID="296db8e5-ed4c-4806-bd26-5ba8017c13cb" Description="" UpdateBehavior="Overwrite">
+          <pnp:TermSets>
+              <pnp:TermSet Name="Resource Type" ID="f0ee1c62-2eab-4826-9d57-6629cf1f7370" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="Image" ID="d1ffb4a5-0e6a-4ff8-90f6-b925e35a2251" Description="" SourceTermId="d1ffb4a5-0e6a-4ff8-90f6-b925e35a2251">
+                  </pnp:Term>
+                  <pnp:Term Name="Logo" ID="8daf9a46-21bb-4a27-850a-a9034b12470b" Description="" SourceTermId="8daf9a46-21bb-4a27-850a-a9034b12470b">
+                  </pnp:Term>
+                  <pnp:Term Name="Policy" ID="b55a3c7e-b7e7-49c2-bcaf-cccff4fdb544" Description="" SourceTermId="b55a3c7e-b7e7-49c2-bcaf-cccff4fdb544">
+                  </pnp:Term>
+                  <pnp:Term Name="Presentation" ID="5a44bd76-fc77-42df-b1fd-ae88a1cfff90" Description="" SourceTermId="5a44bd76-fc77-42df-b1fd-ae88a1cfff90">
+                  </pnp:Term>
+                  <pnp:Term Name="Procedure" ID="b53b5419-f97f-411d-9902-122e124bc68b" Description="" SourceTermId="b53b5419-f97f-411d-9902-122e124bc68b">
+                  </pnp:Term>
+                  <pnp:Term Name="Report" ID="cc782eb0-2100-484e-aa7d-92e1a21eea81" Description="" SourceTermId="cc782eb0-2100-484e-aa7d-92e1a21eea81">
+                  </pnp:Term>
+                  <pnp:Term Name="Training" ID="ef467ccb-0f0a-4cb4-88c6-a33b7047489d" Description="" SourceTermId="ef467ccb-0f0a-4cb4-88c6-a33b7047489d">
+                  </pnp:Term>
+                  <pnp:Term Name="User Guide" ID="8b61306c-b376-4dcd-bdb6-f625043e87cd" Description="" SourceTermId="8b61306c-b376-4dcd-bdb6-f625043e87cd">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+              <pnp:TermSet Name="Team" ID="2343e3ae-c76e-444a-b8b6-69497f825d74" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="Accounting" ID="b34daf82-1f4b-432e-8a25-766319b48d8c" Description="" SourceTermId="b34daf82-1f4b-432e-8a25-766319b48d8c">
+                  </pnp:Term>
+                  <pnp:Term Name="Finance" ID="052db984-024a-4ce2-bac2-5a2f43e386fe" Description="" SourceTermId="052db984-024a-4ce2-bac2-5a2f43e386fe">
+                  </pnp:Term>
+                  <pnp:Term Name="Information Technology" ID="7f5f15aa-5c46-4935-845c-227d21308fc5" Description="" SourceTermId="7f5f15aa-5c46-4935-845c-227d21308fc5">
+                  </pnp:Term>
+                  <pnp:Term Name="Human Resources" ID="7d48d17a-e11c-444b-8f6a-991a23897f8c" Description="" SourceTermId="7d48d17a-e11c-444b-8f6a-991a23897f8c">
+                  </pnp:Term>
+                  <pnp:Term Name="Marketing" ID="f7cc1b08-200d-4932-a02b-337d5cca49c3" Description="" SourceTermId="f7cc1b08-200d-4932-a02b-337d5cca49c3">
+                  </pnp:Term>
+                  <pnp:Term Name="Training" ID="e2cc9ec8-1044-4c91-80fa-f36d05823ff9" Description="" SourceTermId="e2cc9ec8-1044-4c91-80fa-f36d05823ff9">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+              <pnp:TermSet Name="Training Format" ID="6c4e6ee8-a9b1-4596-8842-3b862b4661fc" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="Article" ID="b68c3b7e-e0b0-4e52-9185-59a230180e56" Description="" SourceTermId="b68c3b7e-e0b0-4e52-9185-59a230180e56">
+                  </pnp:Term>
+                  <pnp:Term Name="Video" ID="cd14a169-6295-4c69-86fd-917ed0067cca" Description="" SourceTermId="cd14a169-6295-4c69-86fd-917ed0067cca">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+              <pnp:TermSet Name="Training Platform" ID="c85c145b-edf2-4d32-9048-600a64b00b0d" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="SharePoint" ID="d1e30856-ef92-4d02-9380-cea239e47f8b" Description="" SourceTermId="d1e30856-ef92-4d02-9380-cea239e47f8b">
+                  </pnp:Term>
+                  <pnp:Term Name="Teams" ID="9c28308e-d0d4-442d-87c9-94af8c13ecce" Description="" SourceTermId="9c28308e-d0d4-442d-87c9-94af8c13ecce">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+              <pnp:TermSet Name="How To" ID="b94ff8d2-8a86-4103-9fcc-806ef7c9f067" Description="">
+                <pnp:Terms>
+                  <pnp:Term Name="Add a File" ID="43754380-283f-4bb0-9b5c-996499e9bba0" Description="" SourceTermId="43754380-283f-4bb0-9b5c-996499e9bba0">
+                  </pnp:Term>
+                  <pnp:Term Name="Search for a File" ID="e2d339fa-3d67-4400-aab2-9c0a7e42da5e" Description="" SourceTermId="e2d339fa-3d67-4400-aab2-9c0a7e42da5e">
+                  </pnp:Term>
+                  <pnp:Term Name="Tag a File" ID="cb7164e3-8b56-4089-a79b-cb3e36e717ce" Description="" SourceTermId="cb7164e3-8b56-4089-a79b-cb3e36e717ce">
+                  </pnp:Term>
+                </pnp:Terms>
+              </pnp:TermSet>
+          </pnp:TermSets>
+        </pnp:TermGroup>
     </pnp:TermStore>
   </pnp:Sequence>
 </pnp:Provisioning>

@@ -1,0 +1,39 @@
+<pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" ListExperience="NewExperience" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="" xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+    <pnp:PropertyBagEntries>
+    <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+    </pnp:PropertyBagEntries>
+    <pnp:ContentTypeBindings>
+    <pnp:ContentTypeBinding ContentTypeID="0x010100777A92BE19C3BE4F8F30CB9179E89EC0" Default="true" />
+    <pnp:ContentTypeBinding ContentTypeID="0x0101" />
+    <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+    </pnp:ContentTypeBindings>
+    <pnp:Views>
+    <View Name="{5627B36A-1D2B-4B47-B33D-72BFFBA3350C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+        <Query>
+        <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+        </OrderBy>
+        </Query>
+        <ViewFields>
+        <FieldRef Name="DocIcon" />
+        <FieldRef Name="LinkFilename" />
+        <FieldRef Name="Team" />
+        <FieldRef Name="ResourceType" />
+        <FieldRef Name="Modified" />
+        <FieldRef Name="Editor" />
+        </ViewFields>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Aggregations Value="Off" />
+        <JSLink>clienttemplates.js</JSLink>
+    </View>
+    </pnp:Views>
+    <pnp:FieldRefs>
+    <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" DisplayName="ResourceType_0" />
+    <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" DisplayName="Team_0" />
+    <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" DisplayName="Team" />
+    <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="ResourceType" />
+    </pnp:FieldRefs>
+    <pnp:Webhooks>
+    <pnp:Webhook ServerNotificationUrl="https://5-northcentralus1.pushp.svc.ms/notifications?token=w1-a101525d-86d1-4454-bb38-7e2d78e0f036" ExpiresInDays="1" />
+    </pnp:Webhooks>
+</pnp:ListInstance>

@@ -1,4 +1,6 @@
-<pnp:ContentTypes xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+<pnp:ContentTypes xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
     <!-- SPARK CONTENT TYPES -->
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Sections/Base/Document/SPARK/Spark Document.xml"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Sections/Base/Document/SPARK/Spark Page.xml"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Sections/Base/Document/SPARK/Training Page.xml"/>
 </pnp:ContentTypes>
