@@ -1,4 +1,4 @@
-$url = "https://cfitzsimonds.sharepoint.com/sites/sharepointtraining"
+$url = "https://cfitzsimonds.sharepoint.com/sites/testteam3"
 
 #set up credentials
 $username = 'admin@cfitzsimonds.onmicrosoft.com'
@@ -8,6 +8,6 @@ $creds = new-object -typename System.Management.Automation.PSCredential -argumen
 
 Connect-PnPOnline -Url $url -Credentials $creds
 
-Apply-PnPProvisioningTemplate -Path "D:\repos\flashback\deployment\provisioning\templates\TeamSiteBaseGroup.xml" -Verbose
+Apply-PnPProvisioningTemplate -Path "D:\repos\flashback\deployment\provisioning\templates\TrainingTeamSite.xml" -Verbose
 
 Disconnect-PnPOnline

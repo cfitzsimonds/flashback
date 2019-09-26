@@ -9,139 +9,139 @@
         <pnp:ContentTypeBinding ContentTypeID="0x0120" />
     </pnp:ContentTypeBindings>
     <pnp:Views>
-    <View Name="{C98634D2-C16D-4F71-91B4-5EFDD171653D}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-        <Query>
-        <GroupBy Collapse="FALSE" GroupLimit="30">
-            <FieldRef Name="Author" />
-        </GroupBy>
-        <OrderBy>
-            <FieldRef Name="Modified" />
-        </OrderBy>
-        </Query>
-        <ViewFields>
-        <FieldRef Name="DocIcon" />
-        <FieldRef Name="LinkFilename" />
-        <FieldRef Name="Team" />
-        <FieldRef Name="ResourceType" />
-        <FieldRef Name="Training_x0020_Format" />
-        <FieldRef Name="Training_x0020_Platform" />
-        <FieldRef Name="How_x0020_To" />
-        <FieldRef Name="Editor" />
-        <FieldRef Name="Modified" />
-        <FieldRef Name="Created" />
-        </ViewFields>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <Aggregations Value="Off" />
-        <JSLink>clienttemplates.js</JSLink>
-    </View>
-    <View Name="{D72B1754-4377-4965-99BD-F5D6CDBB7E08}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-        <Query>
-        <OrderBy>
-            <FieldRef Name="Modified" Ascending="FALSE" />
-        </OrderBy>
-        </Query>
-        <ViewFields>
-        <FieldRef Name="DocIcon" />
-        <FieldRef Name="LinkFilename" />
-        <FieldRef Name="Editor" />
-        <FieldRef Name="Modified" />
-        <FieldRef Name="Author" />
-        <FieldRef Name="Created" />
-        </ViewFields>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <JSLink>clienttemplates.js</JSLink>
-    </View>
-    <View Name="{1EABB272-5B1A-407C-BCA6-28A4F9160660}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-        <Query>
-        <GroupBy Collapse="FALSE">
+        <View Name="{C98634D2-C16D-4F71-91B4-5EFDD171653D}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <Query>
+            <GroupBy Collapse="FALSE" GroupLimit="30">
+                <FieldRef Name="Author" />
+            </GroupBy>
+            <OrderBy>
+                <FieldRef Name="Modified" />
+            </OrderBy>
+            </Query>
+            <ViewFields>
+            <FieldRef Name="DocIcon" />
+            <FieldRef Name="LinkFilename" />
+            <FieldRef Name="Team" />
+            <FieldRef Name="ResourceType" />
+            <FieldRef Name="TrainingFormat" />
+            <FieldRef Name="TrainingPlatform" />
+            <FieldRef Name="HowTo" />
             <FieldRef Name="Editor" />
-        </GroupBy>
-        <OrderBy>
-            <FieldRef Name="FileLeafRef" />
-        </OrderBy>
-        </Query>
-        <ViewFields>
-        <FieldRef Name="DocIcon" />
-        <FieldRef Name="LinkFilename" />
-        <FieldRef Name="Editor" />
-        <FieldRef Name="Modified" />
-        <FieldRef Name="Author" />
-        <FieldRef Name="Created" />
-        </ViewFields>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <JSLink>clienttemplates.js</JSLink>
-    </View>
-    <View Name="{EA4EDC42-498A-4C6D-B284-B7513FAD5F4A}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-        <Query>
-        <Where>
-            <Eq>
+            <FieldRef Name="Modified" />
+            <FieldRef Name="Created" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <Aggregations Value="Off" />
+            <JSLink>clienttemplates.js</JSLink>
+        </View>
+        <View Name="{D72B1754-4377-4965-99BD-F5D6CDBB7E08}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <Query>
+            <OrderBy>
+                <FieldRef Name="Modified" Ascending="FALSE" />
+            </OrderBy>
+            </Query>
+            <ViewFields>
+            <FieldRef Name="DocIcon" />
+            <FieldRef Name="LinkFilename" />
+            <FieldRef Name="Editor" />
+            <FieldRef Name="Modified" />
             <FieldRef Name="Author" />
-            <Value Type="Integer">
-                <UserID />
-            </Value>
-            </Eq>
-        </Where>
-        <OrderBy>
-            <FieldRef Name="FileLeafRef" />
-        </OrderBy>
-        </Query>
-        <ViewFields>
-        <FieldRef Name="DocIcon" />
-        <FieldRef Name="LinkFilename" />
-        <FieldRef Name="Editor" />
-        <FieldRef Name="Modified" />
-        <FieldRef Name="Author" />
-        <FieldRef Name="Created" />
-        </ViewFields>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <JSLink>clienttemplates.js</JSLink>
-    </View>
-    <View Name="{C88789D2-81BC-4C8B-8381-F729A5A68695}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-        <Query>
-        <OrderBy>
-            <FieldRef Name="Modified" Ascending="FALSE" />
-        </OrderBy>
-        </Query>
-        <ViewFields>
-        <FieldRef Name="DocIcon" />
-        <FieldRef Name="LinkFilename" />
-        <FieldRef Name="Editor" />
-        <FieldRef Name="Modified" />
-        <FieldRef Name="Author" />
-        <FieldRef Name="Created" />
-        </ViewFields>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <JSLink>clienttemplates.js</JSLink>
-    </View>
-    </pnp:Views>
-    <pnp:FieldRefs>
-        <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="g43bcbe615f545f1bca66c154e3067e2" Hidden="true" DisplayName="Training Platform_0" />
-        <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="o62a1dc32ee84ea78ed57a880ee91558" Hidden="true" DisplayName="Training Format_0" />
-        <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="kd40ce08047d490d9f16caee96f57425" Hidden="true" DisplayName="How To_0" />
-        <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" DisplayName="ResourceType_0" />
-        <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" DisplayName="Team_0" />
-        <pnp:FieldRef ID="c33527b4-d920-4587-b791-45024d00068a" Name="WikiField" DisplayName="Wiki Content" />
-        <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
-        <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
-        <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
-        <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
-        <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
-        <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
-        <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
-        <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
-        <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
-        <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
-        <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
-        <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
-        <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
-        <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
-        <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" DisplayName="Team" />
-        <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="ResourceType" />
-        <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="How_x0020_To" DisplayName="How To" />
-        <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="Training_x0020_Format" DisplayName="Training Format" />
-        <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="Training_x0020_Platform" DisplayName="Training Platform" />
-    </pnp:FieldRefs>
-    <pnp:Webhooks>
-        <pnp:Webhook ServerNotificationUrl="https://10-northcentralus1.pushp.svc.ms/notifications?token=w1-0cf7f4d4-bd27-4f10-9924-78501ed72a3b" ExpiresInDays="1" />
-    </pnp:Webhooks>
+            <FieldRef Name="Created" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <JSLink>clienttemplates.js</JSLink>
+        </View>
+        <View Name="{1EABB272-5B1A-407C-BCA6-28A4F9160660}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <Query>
+            <GroupBy Collapse="FALSE">
+                <FieldRef Name="Editor" />
+            </GroupBy>
+            <OrderBy>
+                <FieldRef Name="FileLeafRef" />
+            </OrderBy>
+            </Query>
+            <ViewFields>
+            <FieldRef Name="DocIcon" />
+            <FieldRef Name="LinkFilename" />
+            <FieldRef Name="Editor" />
+            <FieldRef Name="Modified" />
+            <FieldRef Name="Author" />
+            <FieldRef Name="Created" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <JSLink>clienttemplates.js</JSLink>
+        </View>
+        <View Name="{EA4EDC42-498A-4C6D-B284-B7513FAD5F4A}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <Query>
+            <Where>
+                <Eq>
+                <FieldRef Name="Author" />
+                <Value Type="Integer">
+                    <UserID />
+                </Value>
+                </Eq>
+            </Where>
+            <OrderBy>
+                <FieldRef Name="FileLeafRef" />
+            </OrderBy>
+            </Query>
+            <ViewFields>
+            <FieldRef Name="DocIcon" />
+            <FieldRef Name="LinkFilename" />
+            <FieldRef Name="Editor" />
+            <FieldRef Name="Modified" />
+            <FieldRef Name="Author" />
+            <FieldRef Name="Created" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <JSLink>clienttemplates.js</JSLink>
+        </View>
+        <View Name="{C88789D2-81BC-4C8B-8381-F729A5A68695}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <Query>
+            <OrderBy>
+                <FieldRef Name="Modified" Ascending="FALSE" />
+            </OrderBy>
+            </Query>
+            <ViewFields>
+            <FieldRef Name="DocIcon" />
+            <FieldRef Name="LinkFilename" />
+            <FieldRef Name="Editor" />
+            <FieldRef Name="Modified" />
+            <FieldRef Name="Author" />
+            <FieldRef Name="Created" />
+            </ViewFields>
+            <RowLimit Paged="TRUE">30</RowLimit>
+            <JSLink>clienttemplates.js</JSLink>
+        </View>
+        </pnp:Views>
+        <pnp:FieldRefs>
+            <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="TrainingPlatformTaxHTField" Hidden="true" DisplayName="TrainingPlatformTaxHTField" />
+            <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="TrainingFormatTaxHTField" Hidden="true" DisplayName="TrainingFormatTaxHTField" />
+            <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="HowToTaxHTField" Hidden="true" DisplayName="HowToTaxHTField" />
+            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="ResourceTypeTaxHTField" Hidden="true" DisplayName="ResourceTypeTaxHTField" />
+            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="TeamTaxHTField" Hidden="true" DisplayName="TeamTaxHTField" />
+            <pnp:FieldRef ID="c33527b4-d920-4587-b791-45024d00068a" Name="WikiField" DisplayName="Wiki Content" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
+            <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
+            <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
+            <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
+            <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
+            <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
+            <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" DisplayName="Team" />
+            <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="Resource Type" />
+            <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="HowTo" DisplayName="How To" />
+            <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="TrainingFormat" DisplayName="Training Format" />
+            <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="TrainingPlatform" DisplayName="Training Platform" />
+        </pnp:FieldRefs>
+        <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://15-northcentralus1.pushp.svc.ms/notifications?token=w0-11674575-8a97-4d11-82b3-4a63f4f1040e" ExpiresInDays="1" />
+        </pnp:Webhooks>
 </pnp:ListInstance>

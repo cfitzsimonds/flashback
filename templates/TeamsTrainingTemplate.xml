@@ -1,25 +1,22 @@
 <?xml version="1.0"?>
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.11.1907.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
-  <pnp:Templates ID="CONTAINER-TEMPLATE-AF72448D284F46D9A49A56A1AD5D128D">
-    <pnp:ProvisioningTemplate ID="TEMPLATE-AF72448D284F46D9A49A56A1AD5D128D" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
-      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/_api/GroupService/GetGroupImage?id='53967c4f-b308-4db2-b3c4-07ba30141b9e'&amp;hash=637049383715301887" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-0BDE7D6BC21A4EE98DC68AC4B25470B7">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-0BDE7D6BC21A4EE98DC68AC4B25470B7" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/_api/GroupService/GetGroupImage?id='59a3e7bf-f48d-4b15-8b98-08f473b7bf7a'&amp;hash=637050310352972066" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
       <pnp:PropertyBagEntries>
-        <pnp:PropertyBagEntry Key="SiteNotebookGuid" Value="34c89491-09e8-4266-b9ec-ed1faeca552f" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="SiteNotebookGuid" Value="666dee3d-0557-46ba-a02d-de2cf13c454e" Overwrite="false" />
       </pnp:PropertyBagEntries>
       <pnp:Security AssociatedOwnerGroup="{sitetitle} Owners" AssociatedMemberGroup="{sitetitle} Members" AssociatedVisitorGroup="{sitetitle} Visitors">
         <pnp:AdditionalAdministrators>
-          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|71921871-f5ff-4c10-9a34-add88f8c7ebb" />
-          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|d4f50d6d-0b21-415a-a1e3-b8bbff37e4a0_o" />
+          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|e525044b-4cb1-4fd2-b9b3-3e2497c03f43_o" />
         </pnp:AdditionalAdministrators>
         <pnp:AdditionalOwners>
-          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|71921871-f5ff-4c10-9a34-add88f8c7ebb" />
-          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|d4f50d6d-0b21-415a-a1e3-b8bbff37e4a0_o" />
+          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|e525044b-4cb1-4fd2-b9b3-3e2497c03f43_o" />
         </pnp:AdditionalOwners>
         <pnp:AdditionalMembers>
-          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|71921871-f5ff-4c10-9a34-add88f8c7ebb" />
-          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|d4f50d6d-0b21-415a-a1e3-b8bbff37e4a0" />
+          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|e525044b-4cb1-4fd2-b9b3-3e2497c03f43" />
         </pnp:AdditionalMembers>
         <pnp:Permissions />
       </pnp:Security>
@@ -31,20 +28,20 @@
           <pnp:StructuralNavigation RemoveExistingNodes="false">
             <pnp:NavigationNode Title="Home" Url="{site}" />
             <pnp:NavigationNode Title="Conversations" Url="{site}/_layouts/15/groupstatus.aspx?Target=CONVERSATIONS&amp;Source=QuickLaunch" IsExternal="true" />
-            <pnp:NavigationNode Title="Notebook" Url="{site}/_layouts/15/WopiFrame.aspx?sourcedoc={34c89491-09e8-4266-b9ec-ed1faeca552f}&amp;action=editnew" IsExternal="true" />
+            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Notebook" Url="{site}/_layouts/15/WopiFrame.aspx?sourcedoc={666dee3d-0557-46ba-a02d-de2cf13c454e}&amp;action=editnew" IsExternal="true" />
             <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
             <pnp:NavigationNode Title="Site contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
-            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
       <pnp:SiteFields>
-        <Field Type="Note" DisplayName="Training Platform_0" StaticName="g43bcbe615f545f1bca66c154e3067e2" Name="g43bcbe615f545f1bca66c154e3067e2" ID="{cd56d2bf-b926-4b72-b1bd-1d31b8a03edd}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
-        <Field Type="Note" DisplayName="Training Format_0" StaticName="o62a1dc32ee84ea78ed57a880ee91558" Name="o62a1dc32ee84ea78ed57a880ee91558" ID="{ff968fff-795e-44f8-97b9-2a3ab288d283}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
-        <Field Type="Note" DisplayName="ResourceType_0" StaticName="c4ac67417be84580936964321ce9b1a5" Name="c4ac67417be84580936964321ce9b1a5" ID="{5f30702c-da9c-4b1e-a349-fcc0d40a1e6d}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
-        <Field Type="Note" DisplayName="Team_0" StaticName="i55b7c15373d475e99daee62acd72efc" Name="i55b7c15373d475e99daee62acd72efc" ID="{11402d64-1d82-4299-8966-7c5ea0acc899}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
-        <Field Type="Note" DisplayName="How To_0" StaticName="kd40ce08047d490d9f16caee96f57425" Name="kd40ce08047d490d9f16caee96f57425" ID="{62668006-a572-45e0-9530-62e57ee5c0a2}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
-        <Field Type="TaxonomyFieldTypeMulti" DisplayName="How To" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="_SPARK" ID="{4d40ce08-047d-490d-9f16-caee96f57425}" SourceID="{{siteid}}" StaticName="How_x0020_To" Name="How_x0020_To">
+        <Field Type="Note" DisplayName="TrainingPlatformTaxHTField" StaticName="TrainingPlatformTaxHTField" Name="TrainingPlatformTaxHTField" ID="{cd56d2bf-b926-4b72-b1bd-1d31b8a03edd}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="TrainingFormatTaxHTField" StaticName="TrainingFormatTaxHTField" Name="TrainingFormatTaxHTField" ID="{ff968fff-795e-44f8-97b9-2a3ab288d283}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="ResourceTypeTaxHTField" StaticName="ResourceTypeTaxHTField" Name="ResourceTypeTaxHTField" ID="{5f30702c-da9c-4b1e-a349-fcc0d40a1e6d}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="TeamTaxHTField" StaticName="TeamTaxHTField" Name="TeamTaxHTField" ID="{11402d64-1d82-4299-8966-7c5ea0acc899}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="HowToTaxHTField" StaticName="HowToTaxHTField" Name="HowToTaxHTField" ID="{62668006-a572-45e0-9530-62e57ee5c0a2}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="How To" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="_SPARK" ID="{4d40ce08-047d-490d-9f16-caee96f57425}" SourceID="{{siteid}}" StaticName="HowTo" Name="HowTo" AllowDeletion="TRUE">
           <Default>
           </Default>
           <Customization>
@@ -176,7 +173,7 @@
             </ArrayOfProperty>
           </Customization>
         </Field>
-        <Field Type="TaxonomyFieldType" DisplayName="ResourceType" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{c4ac6741-7be8-4580-9369-64321ce9b1a5}" SourceID="{{siteid}}" StaticName="ResourceType" Name="ResourceType" AllowDeletion="TRUE">
+        <Field Type="TaxonomyFieldType" DisplayName="Resource Type" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{c4ac6741-7be8-4580-9369-64321ce9b1a5}" SourceID="{{siteid}}" StaticName="ResourceType" Name="ResourceType" AllowDeletion="TRUE">
           <Default>
           </Default>
           <Customization>
@@ -242,7 +239,7 @@
             </ArrayOfProperty>
           </Customization>
         </Field>
-        <Field Type="TaxonomyFieldType" DisplayName="Training Format" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{862a1dc3-2ee8-4ea7-8ed5-7a880ee91558}" SourceID="{{siteid}}" StaticName="Training_x0020_Format" Name="Training_x0020_Format">
+        <Field Type="TaxonomyFieldType" DisplayName="Training Format" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{862a1dc3-2ee8-4ea7-8ed5-7a880ee91558}" SourceID="{{siteid}}" StaticName="TrainingFormat" Name="TrainingFormat" AllowDeletion="TRUE">
           <Default>
           </Default>
           <Customization>
@@ -308,7 +305,7 @@
             </ArrayOfProperty>
           </Customization>
         </Field>
-        <Field Type="TaxonomyFieldType" DisplayName="Training Platform" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{043bcbe6-15f5-45f1-bca6-6c154e3067e2}" SourceID="{{siteid}}" StaticName="Training_x0020_Platform" Name="Training_x0020_Platform">
+        <Field Type="TaxonomyFieldType" DisplayName="Training Platform" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{043bcbe6-15f5-45f1-bca6-6c154e3067e2}" SourceID="{{siteid}}" StaticName="TrainingPlatform" Name="TrainingPlatform" AllowDeletion="TRUE">
           <Default>
           </Default>
           <Customization>
@@ -386,12 +383,12 @@
             <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="false" />
             <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="false" />
-            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" UpdateChildren="false" />
-            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" UpdateChildren="false" />
+            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="ResourceTypeTaxHTField" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="TeamTaxHTField" Hidden="true" UpdateChildren="false" />
           </pnp:FieldRefs>
         </pnp:ContentType>
         <pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C411800E1D5AF48C8002041896B5329B40D5F9E" Name="SPARK Page" Description="" Group="_SPARK" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
@@ -417,12 +414,12 @@
             <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="false" />
             <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="false" />
             <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="false" />
-            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" UpdateChildren="false" />
-            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" UpdateChildren="false" />
+            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="ResourceTypeTaxHTField" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="TeamTaxHTField" Hidden="true" UpdateChildren="false" />
           </pnp:FieldRefs>
           <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
         </pnp:ContentType>
@@ -449,18 +446,18 @@
             <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="false" />
             <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="false" />
             <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="false" />
-            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" UpdateChildren="false" />
-            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" UpdateChildren="false" />
             <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" UpdateChildren="false" />
-            <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="kd40ce08047d490d9f16caee96f57425" Hidden="true" UpdateChildren="false" />
-            <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="How_x0020_To" UpdateChildren="false" />
-            <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="o62a1dc32ee84ea78ed57a880ee91558" Hidden="true" UpdateChildren="false" />
-            <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="Training_x0020_Format" UpdateChildren="false" />
-            <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="g43bcbe615f545f1bca66c154e3067e2" Hidden="true" UpdateChildren="false" />
-            <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="Training_x0020_Platform" UpdateChildren="false" />
+            <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="HowTo" UpdateChildren="false" />
+            <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="TrainingFormat" UpdateChildren="false" />
+            <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="TrainingPlatform" UpdateChildren="false" />
+            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="ResourceTypeTaxHTField" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="TrainingFormatTaxHTField" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="TeamTaxHTField" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="TrainingPlatformTaxHTField" Hidden="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="HowToTaxHTField" Hidden="true" UpdateChildren="false" />
           </pnp:FieldRefs>
           <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
         </pnp:ContentType>
@@ -476,7 +473,7 @@
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{0C1E78AF-AF93-40CD-9AD6-E8349F899D10}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <View Name="{5627B36A-1D2B-4B47-B33D-72BFFBA3350C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
               <Query>
                 <OrderBy>
                   <FieldRef Name="FileLeafRef" />
@@ -496,23 +493,23 @@
             </View>
           </pnp:Views>
           <pnp:FieldRefs>
-            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" DisplayName="ResourceType_0" />
-            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" DisplayName="Team_0" />
+            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="ResourceTypeTaxHTField" Hidden="true" DisplayName="ResourceTypeTaxHTField" />
+            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="TeamTaxHTField" Hidden="true" DisplayName="TeamTaxHTField" />
             <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" DisplayName="Team" />
-            <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="ResourceType" />
+            <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="Resource Type" />
           </pnp:FieldRefs>
           <pnp:Webhooks>
-            <pnp:Webhook ServerNotificationUrl="https://8-northcentralus1.pushp.svc.ms/notifications?token=w0-b933eba8-7da2-48f2-94cc-3e19a151914b" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://12-northcentralus1.pushp.svc.ms/notifications?token=w1-c8d5a30a-8f99-424b-bb6c-aa94081f47d3" ExpiresInDays="1" />
           </pnp:Webhooks>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="500" MaxVersionLimit="500" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800E1D5AF48C8002041896B5329B40D5F9E" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800E1D5AF48C8002041896B5329B40D5F9E01" />
             <pnp:ContentTypeBinding ContentTypeID="0x010108" />
             <pnp:ContentTypeBinding ContentTypeID="0x01010901" />
             <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" />
             <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800E1D5AF48C8002041896B5329B40D5F9E01" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
@@ -530,9 +527,9 @@
                 <FieldRef Name="LinkFilename" />
                 <FieldRef Name="Team" />
                 <FieldRef Name="ResourceType" />
-                <FieldRef Name="Training_x0020_Format" />
-                <FieldRef Name="Training_x0020_Platform" />
-                <FieldRef Name="How_x0020_To" />
+                <FieldRef Name="TrainingFormat" />
+                <FieldRef Name="TrainingPlatform" />
+                <FieldRef Name="HowTo" />
                 <FieldRef Name="Editor" />
                 <FieldRef Name="Modified" />
                 <FieldRef Name="Created" />
@@ -622,11 +619,11 @@
             </View>
           </pnp:Views>
           <pnp:FieldRefs>
-            <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="g43bcbe615f545f1bca66c154e3067e2" Hidden="true" DisplayName="Training Platform_0" />
-            <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="o62a1dc32ee84ea78ed57a880ee91558" Hidden="true" DisplayName="Training Format_0" />
-            <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="kd40ce08047d490d9f16caee96f57425" Hidden="true" DisplayName="How To_0" />
-            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="c4ac67417be84580936964321ce9b1a5" Hidden="true" DisplayName="ResourceType_0" />
-            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="i55b7c15373d475e99daee62acd72efc" Hidden="true" DisplayName="Team_0" />
+            <pnp:FieldRef ID="cd56d2bf-b926-4b72-b1bd-1d31b8a03edd" Name="TrainingPlatformTaxHTField" Hidden="true" DisplayName="TrainingPlatformTaxHTField" />
+            <pnp:FieldRef ID="ff968fff-795e-44f8-97b9-2a3ab288d283" Name="TrainingFormatTaxHTField" Hidden="true" DisplayName="TrainingFormatTaxHTField" />
+            <pnp:FieldRef ID="62668006-a572-45e0-9530-62e57ee5c0a2" Name="HowToTaxHTField" Hidden="true" DisplayName="HowToTaxHTField" />
+            <pnp:FieldRef ID="5f30702c-da9c-4b1e-a349-fcc0d40a1e6d" Name="ResourceTypeTaxHTField" Hidden="true" DisplayName="ResourceTypeTaxHTField" />
+            <pnp:FieldRef ID="11402d64-1d82-4299-8966-7c5ea0acc899" Name="TeamTaxHTField" Hidden="true" DisplayName="TeamTaxHTField" />
             <pnp:FieldRef ID="c33527b4-d920-4587-b791-45024d00068a" Name="WikiField" DisplayName="Wiki Content" />
             <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
             <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
@@ -643,13 +640,13 @@
             <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
             <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
             <pnp:FieldRef ID="255b7c15-373d-475e-99da-ee62acd72efc" Name="Team" DisplayName="Team" />
-            <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="ResourceType" />
-            <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="How_x0020_To" DisplayName="How To" />
-            <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="Training_x0020_Format" DisplayName="Training Format" />
-            <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="Training_x0020_Platform" DisplayName="Training Platform" />
+            <pnp:FieldRef ID="c4ac6741-7be8-4580-9369-64321ce9b1a5" Name="ResourceType" DisplayName="Resource Type" />
+            <pnp:FieldRef ID="4d40ce08-047d-490d-9f16-caee96f57425" Name="HowTo" DisplayName="How To" />
+            <pnp:FieldRef ID="862a1dc3-2ee8-4ea7-8ed5-7a880ee91558" Name="TrainingFormat" DisplayName="Training Format" />
+            <pnp:FieldRef ID="043bcbe6-15f5-45f1-bca6-6c154e3067e2" Name="TrainingPlatform" DisplayName="Training Platform" />
           </pnp:FieldRefs>
           <pnp:Webhooks>
-            <pnp:Webhook ServerNotificationUrl="https://10-northcentralus1.pushp.svc.ms/notifications?token=w1-0cf7f4d4-bd27-4f10-9924-78501ed72a3b" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://15-northcentralus1.pushp.svc.ms/notifications?token=w0-11674575-8a97-4d11-82b3-4a63f4f1040e" ExpiresInDays="1" />
           </pnp:Webhooks>
         </pnp:ListInstance>
       </pnp:Lists>
@@ -659,6 +656,23 @@
           <pnp:Feature ID="f151bb39-7c3b-414f-bb36-6bf18872052f" />
         </pnp:WebFeatures>
       </pnp:Features>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="VideoEmbed" JsonControlData="{&quot;id&quot;: &quot;275c0095-a77e-4f6d-a2a0-6a7626911518&quot;, &quot;instanceId&quot;: &quot;141f81ea-7f88-4143-9cdd-5acde9246b84&quot;, &quot;title&quot;: &quot;Stream&quot;, &quot;description&quot;: &quot;Display a Stream video or channel&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;showInfo&quot;:false,&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;475\&quot; src=\&quot;https://web.microsoftstream.com/embed/browse?app=SPO&amp;displayMode=buttons&amp;showDescription=true&amp;sort=trending\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;,&quot;isStream&quot;:true,&quot;showvideoStart&quot;:false,&quot;videoStartAt&quot;:&quot;&quot;,&quot;channelSortBy&quot;:&quot;trending&quot;,&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;browseSortBy&quot;:&quot;trending&quot;,&quot;browseSearchTerm&quot;:&quot;&quot;,&quot;browseFilterTerm&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;videoSource&quot;:&quot;https://web.microsoftstream.com/embed/browse&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="275c0095-a77e-4f6d-a2a0-6a7626911518" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;418ba70b-4cf7-410a-a5fd-ea38386915ac&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2},&quot;thumbnailType&quot;:3,&quot;id&quot;:1},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2},&quot;thumbnailType&quot;:3,&quot;id&quot;:2}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Quick links&quot;,&quot;items[0].title&quot;:&quot;Learn about a team site&quot;,&quot;items[1].title&quot;:&quot;Learn how to add a page&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://go.microsoft.com/fwlink/p/?linkid=827918&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://go.microsoft.com/fwlink/p/?linkid=827919&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;416a4c58-61fc-4166-aa19-1099fad50545&quot;, &quot;title&quot;: &quot;Document library&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;showDefaultDocumentLibrary&quot;:true,&quot;webpartHeightKey&quot;:4,&quot;selectedListUrl&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Documents&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
       <pnp:Header Layout="Standard" />
     </pnp:ProvisioningTemplate>
   </pnp:Templates>

@@ -1,10 +1,10 @@
 <pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
-    <Field Type="Note" DisplayName="Training Platform_0" StaticName="g43bcbe615f545f1bca66c154e3067e2" Name="g43bcbe615f545f1bca66c154e3067e2" ID="{cd56d2bf-b926-4b72-b1bd-1d31b8a03edd}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
-    <Field Type="Note" DisplayName="Training Format_0" StaticName="o62a1dc32ee84ea78ed57a880ee91558" Name="o62a1dc32ee84ea78ed57a880ee91558" ID="{ff968fff-795e-44f8-97b9-2a3ab288d283}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
-    <Field Type="Note" DisplayName="ResourceType_0" StaticName="c4ac67417be84580936964321ce9b1a5" Name="c4ac67417be84580936964321ce9b1a5" ID="{5f30702c-da9c-4b1e-a349-fcc0d40a1e6d}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
-    <Field Type="Note" DisplayName="Team_0" StaticName="i55b7c15373d475e99daee62acd72efc" Name="i55b7c15373d475e99daee62acd72efc" ID="{11402d64-1d82-4299-8966-7c5ea0acc899}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
-    <Field Type="Note" DisplayName="How To_0" StaticName="kd40ce08047d490d9f16caee96f57425" Name="kd40ce08047d490d9f16caee96f57425" ID="{62668006-a572-45e0-9530-62e57ee5c0a2}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
-    <Field Type="TaxonomyFieldTypeMulti" DisplayName="How To" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="_SPARK" ID="{4d40ce08-047d-490d-9f16-caee96f57425}" SourceID="{{siteid}}" StaticName="How_x0020_To" Name="How_x0020_To">
+    <Field Type="Note" DisplayName="TrainingPlatformTaxHTField" StaticName="TrainingPlatformTaxHTField" Name="TrainingPlatformTaxHTField" ID="{cd56d2bf-b926-4b72-b1bd-1d31b8a03edd}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
+    <Field Type="Note" DisplayName="TrainingFormatTaxHTField" StaticName="TrainingFormatTaxHTField" Name="TrainingFormatTaxHTField" ID="{ff968fff-795e-44f8-97b9-2a3ab288d283}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
+    <Field Type="Note" DisplayName="ResourceTypeTaxHTField" StaticName="ResourceTypeTaxHTField" Name="ResourceTypeTaxHTField" ID="{5f30702c-da9c-4b1e-a349-fcc0d40a1e6d}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+    <Field Type="Note" DisplayName="TeamTaxHTField" StaticName="TeamTaxHTField" Name="TeamTaxHTField" ID="{11402d64-1d82-4299-8966-7c5ea0acc899}" ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" AllowDeletion="TRUE" Hidden="TRUE" />
+    <Field Type="Note" DisplayName="HowToTaxHTField" StaticName="HowToTaxHTField" Name="HowToTaxHTField" ID="{62668006-a572-45e0-9530-62e57ee5c0a2}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{a93c7a9d-1209-458c-8c4a-462ebf8cd298}" />
+    <Field Type="TaxonomyFieldTypeMulti" DisplayName="How To" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="_SPARK" ID="{4d40ce08-047d-490d-9f16-caee96f57425}" SourceID="{{siteid}}" StaticName="HowTo" Name="HowTo">
         <Default>
         </Default>
         <Customization>
@@ -136,7 +136,7 @@
         </ArrayOfProperty>
         </Customization>
     </Field>
-    <Field Type="TaxonomyFieldType" DisplayName="ResourceType" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{c4ac6741-7be8-4580-9369-64321ce9b1a5}" SourceID="{{siteid}}" StaticName="ResourceType" Name="ResourceType" AllowDeletion="TRUE">
+    <Field Type="TaxonomyFieldType" DisplayName="Resource Type" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{c4ac6741-7be8-4580-9369-64321ce9b1a5}" SourceID="{{siteid}}" StaticName="ResourceType" Name="ResourceType" AllowDeletion="TRUE">
         <Default>
         </Default>
         <Customization>
@@ -202,7 +202,7 @@
         </ArrayOfProperty>
         </Customization>
     </Field>
-    <Field Type="TaxonomyFieldType" DisplayName="Training Format" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{862a1dc3-2ee8-4ea7-8ed5-7a880ee91558}" SourceID="{{siteid}}" StaticName="Training_x0020_Format" Name="Training_x0020_Format">
+    <Field Type="TaxonomyFieldType" DisplayName="Training Format" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{862a1dc3-2ee8-4ea7-8ed5-7a880ee91558}" SourceID="{{siteid}}" StaticName="TrainingFormat" Name="TrainingFormat">
         <Default>
         </Default>
         <Customization>
@@ -268,7 +268,7 @@
         </ArrayOfProperty>
         </Customization>
     </Field>
-    <Field Type="TaxonomyFieldType" DisplayName="Training Platform" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{043bcbe6-15f5-45f1-bca6-6c154e3067e2}" SourceID="{{siteid}}" StaticName="Training_x0020_Platform" Name="Training_x0020_Platform">
+    <Field Type="TaxonomyFieldType" DisplayName="Training Platform" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="_SPARK" ID="{043bcbe6-15f5-45f1-bca6-6c154e3067e2}" SourceID="{{siteid}}" StaticName="TrainingPlatform" Name="TrainingPlatform">
         <Default>
         </Default>
         <Customization>
