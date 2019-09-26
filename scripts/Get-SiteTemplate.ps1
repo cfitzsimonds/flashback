@@ -1,4 +1,4 @@
-$siteUrl = "https://cfitzsimonds.sharepoint.com/sites/TestTeam2"
+$siteUrl = "https://cfitzsimonds.sharepoint.com/sites/sharepointtraining"
 
 Connect-PnPOnline -Url $siteUrl -Credentials (Get-Credential)
 

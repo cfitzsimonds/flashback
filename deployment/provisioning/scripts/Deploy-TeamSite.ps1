@@ -1,4 +1,4 @@
-$url = "https://cfitzsimonds.sharepoint.com/sites/testteam3"
+$url = "https://cfitzsimonds.sharepoint.com/sites/teamstraining"
 
 #set up credentials
 $username = 'admin@cfitzsimonds.onmicrosoft.com'

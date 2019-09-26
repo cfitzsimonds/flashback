@@ -1,5 +1,5 @@
 ﻿$adminUrl = "https://cfitzsimonds-admin.sharepoint.com"
-$siteUrl = "https://cfitzsimonds.sharepoint.com/sites/sharepointtraining"
+$siteUrl = "https://cfitzsimonds.sharepoint.com/sites/twitter"
 
 #set up credentials
 $username = 'admin@cfitzsimonds.onmicrosoft.com'

@@ -4,6 +4,7 @@
     </pnp:PropertyBagEntries>
     <pnp:ContentTypeBindings>
         <pnp:ContentTypeBinding ContentTypeID="0x010100777A92BE19C3BE4F8F30CB9179E89EC0" Default="true" />
+        <pnp:ContentTypeBinding ContentTypeID="0x010100777A92BE19C3BE4F8F30CB9179E89EC001" />
         <pnp:ContentTypeBinding ContentTypeID="0x0101" />
         <pnp:ContentTypeBinding ContentTypeID="0x0120" />
     </pnp:ContentTypeBindings>
